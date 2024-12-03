@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import { Header } from "./components/templates/header";
 import { Promocao } from "./components/templates/promocao";
 import { BrandCarousel } from "./components/ui/carroselMarcas";
-import ShoppingCart from "./components/ui/cartBtn";
+import { ShoppingCart } from "./components/ui/cartBtn";
 import { ProdutoContext } from "./providers/ProdutoProvider";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
@@ -17,7 +17,15 @@ export default function Home() {
     return <div>Erro ao carregar contexto</div>;
   }
 
-  const { produtos, loading, error } = contextProduto;
+  const { 
+    produtosMasc,
+    produtosFem,
+    produtosKid,
+    produtosNew,
+    produtosPromo,
+    loading, 
+    error
+  } = contextProduto;
 
   if (loading) {
     return <div>Loading...</div>
@@ -28,16 +36,19 @@ export default function Home() {
 
 
   return (
-    <main>
-      <header className="">
+    <main >
+      <header>
         <Header/>
       </header>
-      <section className="px-12">
+      <section className="px-12 ">
         <BrandCarousel/>
         <Promocao/>
       </section>
+
+
+
       <h1>produts</h1>
-      {produtos?.map(produto => (
+      {produtosFem?.map(produto => (
         <Card key={produto.id}>
           <CardHeader>
             <CardContent>

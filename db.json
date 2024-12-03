@@ -1,0 +1,144 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Camiseta Estampada",
+      "slug": "camiseta-estampada",
+      "description": "Camiseta de algodão 100% com estampa exclusiva.",
+      "rating": 4.5,
+      "preco": 1200,
+      "image": "/promo1.png",
+      "category": ["promocao"]
+    },
+    {
+      "id": 2,
+      "title": "Camiseta Estampada - Edição Limitada",
+      "slug": "camiseta-estampada-edicao-limitada",
+      "description": "Camiseta de algodão 100% com estampa exclusiva e design moderno.",
+      "rating": 4.6,
+      "preco": 1300,
+      "image": "/promo1.png",
+      "category": ["promocao"]
+    },
+    {
+      "id": 3,
+      "title": "Camiseta Estampada - Verão 2025",
+      "slug": "camiseta-estampada-verao-2025",
+      "description": "Camiseta leve e fresca, ideal para os dias quentes.",
+      "rating": 4.7,
+      "preco": 1250,
+      "image": "/promo1.png",
+      "category": ["promocao"]
+    },
+    {
+      "id": 4,
+      "title": "Camiseta Estampada - Conforto Total",
+      "slug": "camiseta-estampada-conforto-total",
+      "description": "Camiseta super confortável, perfeita para o dia a dia.",
+      "rating": 4.8,
+      "preco": 1400,
+      "image": "/promo1.png",
+      "category": ["promocao"]
+    },
+    {
+      "id": 5,
+      "title": "Camiseta Estampada - Coleção Outono",
+      "slug": "camiseta-estampada-colecao-outono",
+      "description": "Camiseta com estampa outonal, ideal para a estação.",
+      "rating": 4.9,
+      "preco": 1350,
+      "image": "/promo1.png",
+      "category": ["promocao"]
+    },
+    {
+      "id": 6,
+      "title": "Tênis Esportivo",
+      "slug": "tenis-esportivo",
+      "description": "Tênis leve e respirável, ideal para corridas.",
+      "rating": 4.7,
+      "preco": 1200,
+      "image": "/capa2.jpeg",
+      "category": ["masculino"]
+    },
+    {
+      "id": 7,
+      "title": "Tênis Esportivo - Performance Aumentada",
+      "slug": "tenis-esportivo-performance-aumentada",
+      "description": "Tênis projetado para máxima performance em corridas.",
+      "rating": 4.8,
+      "preco": 1250,
+      "image": "/capa2.jpeg",
+      "category": ["masculino"]
+    },
+    {
+      "id": 8,
+      "title": "Tênis Esportivo - Conforto Extra",
+      "slug": "tenis-esportivo-conforto-extra",
+      "description": "Modelo com palmilha extra macia para maior conforto.",
+      "rating": 4.9,
+      "preco": 1300,
+      "image": "/capa2.jpeg",
+      "category": ["masculino"]
+    },
+    {
+      	"id": 9,
+      	"title":"Tênis Esportivo - Edição Especial",
+      	"slug":"tenis-esportivo-edicao-especial",
+      	"description":"Modelo exclusivo com cores vibrantes e design arrojado.",
+      	"rating" :4.9,
+      	"preco" :1350,
+      	"image" :"/capa2.jpeg",
+      	"category":["masculino"]
+     },
+     {
+      	"id" :10,
+      	"title":"Tênis Esportivo - Versão Urbana",
+      	"slug":"tenis-esportivo-versao-urbana",
+      	"description":"Ideal para corridas urbanas, combina estilo e funcionalidade.",
+      	"rating" :5.0,
+      	"preco" :1400,
+      	"image" :"/capa2.jpeg",
+      	"category":["masculino"]
+     },
+     {
+      	"id" :11,
+      	"title":"Vestido Floral",
+      	"slug":"vestido-floral",
+      	"description":"Vestido leve e confortável, perfeito para o verão.",
+      	"rating" :4.8,
+      	"preco" :1500,
+      	"image" :"/promo1.png",
+      	"category":["feminino"]
+     },
+     {
+      	"id" :12,
+      	"title":"Vestido Floral - Edição Primavera",
+      	"slug":"vestido-floral-edicao-primavera",
+      	"description":"Vestido fresco com estampas florais vibrantes.",
+      	"rating" :4.9,
+      	"preco" :1550,
+      	"image" :"/promo1.png",
+      	"category":["feminino"]
+     },
+     {
+       	"id" :13,
+       	"title":"Camiseta Infantil - Diversão Colorida",
+       	"slug":"camiseta-infantil-diversao-colorida",
+       	"description":"Camiseta divertida e colorida, perfeita para crianças.",
+       	"rating" :4.7,
+       	"preco" :800,
+       	"image" :"/infantil1.png",
+       	"category":["infantil"]
+     },
+     {
+       	"id" :14,
+       	"title":"Vestido Infantil - Estilo e Conforto",
+       	"slug":"vestido-infantil-estilo-e-conforto",
+       	"description":"Vestido leve e estiloso, ideal para festas infantis.",
+       	"rating" :4.8,
+       	"preco" :900,
+       	"image" :"/infantil2.png",
+       	"category":["infantil"]
+     }
+   ]
+}

@@ -81,7 +81,7 @@ export function BrandCarousel() {
   }, [api])
 
   return (
-    <div className="bg-white py-12 ">
+    <div className=" py-12 ">
       <Carousel
         setApi={setApi}
         opts={{

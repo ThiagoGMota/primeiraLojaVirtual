@@ -1,3 +1,4 @@
+'use client'
 import { playfair_display } from "@/app/fonts/fonts";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,9 +10,10 @@ export const Header = () => {
       <Image
         src="/capa1.jpeg"
         alt="cover"
-        layout="fill"
-        objectFit="cover"
+        fill
+        className="object-cover"
         quality={100}
+        priority
       />
       <div className="absolute inset-0 bg-black opacity-70"></div>
       <div className="absolute inset-0 flex justify-center items-center">
@@ -20,18 +22,18 @@ export const Header = () => {
             Elegância que transcende o tempo.
           </h1>
           <div className="flex justify-between items-center flex-col gap-y-8">
-            <p className="text-4xl text-center text-zinc-300 ">Nova Coleção</p>
+            <p className="text-4xl text-center text-zinc-300">Nova Coleção</p>
             <Link 
                 href={'/novidades'} 
                 className="bg-black py-6 px-12 rounded-xl hover:bg-white 
-                hover:text-black ease-linear border-2 border-black"
+                hover:text-black ease-linear transition-colors border-2 border-black"
             >
                 Compre Agora
             </Link>
           </div>
-          
         </div>
       </div>
     </div>
   );
 };
+
