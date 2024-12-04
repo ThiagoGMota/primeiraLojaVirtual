@@ -5,10 +5,8 @@ import { Promocao } from "./components/templates/promocao";
 import { BrandCarousel } from "./components/ui/carroselMarcas";
 import { ShoppingCart } from "./components/ui/cartBtn";
 import { ProdutoContext } from "./providers/ProdutoProvider";
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
 import { Footer } from "./components/templates/footer";
+import { NovaColecao } from "./components/templates/novaColecao";
 
 
 export default function Home() {
@@ -19,11 +17,7 @@ export default function Home() {
   }
 
   const { 
-    produtosMasc,
-    produtosFem,
-    produtosKid,
-    produtosNew,
-    produtosPromo,
+    produtosLimitado,
     loading, 
     error
   } = contextProduto;
@@ -45,27 +39,9 @@ export default function Home() {
         <BrandCarousel/>
         <Promocao/>
       </section>
-
-
-
-      <h1>produts</h1>
-      {produtosFem?.map(produto => (
-        <Card key={produto.id}>
-          <CardHeader>
-            <CardContent>
-              <Image src={produto.image} alt="cover" width={100} height={100} />
-            </CardContent>
-          </CardHeader>
-          <CardContent>
-            <CardTitle>{produto.title}</CardTitle>
-            <span>{produto.rating}</span>
-          </CardContent>
-          <CardFooter>
-            <span>{produto.price}</span>
-            <Button>Add ao carrinho</Button>
-          </CardFooter>
-        </Card>
-      ))}
+      <section className="px-12 py-10 bg-[#eff4f5]">
+          <NovaColecao/>
+      </section>
       <ShoppingCart/>   
       <Footer/>
     </main>

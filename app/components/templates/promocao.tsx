@@ -10,7 +10,7 @@ export const Promocao = () => {
    /*  const contextProduto =  useContext(ProdutoContext)
     const {  } = contextProduto */
   return (
-    <div className='flex'>
+    <div className='flex pb-8'>
         <div className='w-5/12  '>
             <div className=' pb-28'>
                 <h1 className={`text-5xl text-zinc-800  ${playfair_display.className}`}>Limitado</h1>
@@ -50,8 +50,6 @@ export const Promocao = () => {
                             <Image src="/promo2.png" alt='2' width={400} height={200}/>
                         </div>
                     </CarouselItem>
-                   
-                   
                 </CarouselContent>
                 <div className=' absolute right-52 top-[550px]'>
                     <CarouselPrevious className='border-2 border-black'/>

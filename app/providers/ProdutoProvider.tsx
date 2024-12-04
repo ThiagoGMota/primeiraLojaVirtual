@@ -3,11 +3,12 @@ import React, { createContext, useEffect, useState } from "react";
 import { fetchProdutos, Produto } from "../services/produtosApi";
 
 interface ProdutoContext {
-    produtosMasc: Produto[];
-    produtosFem: Produto[];
-    produtosPromo: Produto[];
-    produtosKid: Produto[];
-    produtosNew: Produto[];
+    roupaMasculina: Produto[];
+    roupaFeminina: Produto[];
+    produtosLimitado: Produto[];
+    roupaInfantil: Produto[];
+    acessoriosFemininos: Produto[]
+    acessoriosMasculinos: Produto[]
     loading: boolean;
     error: string | null;
 }
@@ -16,12 +17,13 @@ export const ProdutoContext = createContext<ProdutoContext | undefined>(undefine
 
 export const ProdutoProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     
-    const [produtosMasc, setProdutosMasc] = useState<Produto[]>([]);
-    const [produtosFem, setProdutosFem] = useState<Produto[]>([]);
-    const [produtosPromo, setProdutosPromo] = useState<Produto[]>([]);
-    const [produtosKid, setProdutosKid] = useState<Produto[]>([]);
-    const [produtosNew, setProdutosNew] = useState<Produto[]>([]);
-    const [loading, setLoading] = useState(true); // Inicializa como true
+    const [roupaMasculina, setRoupaMasculina] = useState<Produto[]>([]);
+    const [roupaFeminina, setRoupaFeminina] = useState<Produto[]>([]);
+    const [produtosLimitado, setProdutosLimitado] = useState<Produto[]>([]);
+    const [roupaInfantil, setRoupaInfantil] = useState<Produto[]>([]);
+    const [acessoriosMasculinos, setAcessoriosMasculinos] = useState<Produto[]>([]);
+    const [acessoriosFemininos, setAcessoriosfemininos] = useState<Produto[]>([]);
+    const [loading, setLoading] = useState(true); 
     const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
@@ -30,16 +32,18 @@ export const ProdutoProvider: React.FC<{ children: React.ReactNode }> = ({ child
                 const { 
                     masculino, 
                     feminino, 
-                    infantil, 
-                    novaColecao, 
-                    promocao 
+                    infantil,
+                    acessoriosFemininos,
+                    acessoriosMasculinos,
+                    limitado
                 } = await fetchProdutos();
                 
-                setProdutosMasc(masculino);
-                setProdutosFem(feminino);
-                setProdutosPromo(promocao);
-                setProdutosKid(infantil);
-                setProdutosNew(novaColecao);
+                setAcessoriosMasculinos(acessoriosMasculinos)
+                setAcessoriosfemininos(acessoriosFemininos)
+                setRoupaInfantil(infantil)
+                setRoupaFeminina(feminino)
+                setRoupaMasculina(masculino)
+                setProdutosLimitado(limitado)
             } catch (error) {
                 console.error(error); // Log do erro para depuração
                 setError('Erro ao carregar produtos'); // Corrigido o typo
@@ -53,11 +57,12 @@ export const ProdutoProvider: React.FC<{ children: React.ReactNode }> = ({ child
 
     return (
         <ProdutoContext.Provider value={{ 
-            produtosMasc, 
-            produtosFem, 
-            produtosPromo, 
-            produtosKid, 
-            produtosNew, 
+            roupaFeminina,
+            roupaMasculina,
+            produtosLimitado,
+            roupaInfantil,
+            acessoriosMasculinos,
+            acessoriosFemininos,
             loading, 
             error 
         }}>

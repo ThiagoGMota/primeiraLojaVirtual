@@ -10,7 +10,7 @@ export interface Produto {
 }
 
 // Definindo as categorias como um tipo literal
-type Categoria = 'masculino' | 'promocao' | 'feminino' | 'infantil' | 'novaColecao';
+type Categoria = 'masculino' | 'limitado' | 'feminino' | 'infantil' | 'acessoriosMasculinos' | 'acessoriosFemininos';
 
 export const fetchProdutos = async (): Promise<Record<Categoria, Produto[]>> => {
     const response = await fetch('http://localhost:3001/products');
@@ -23,11 +23,12 @@ export const fetchProdutos = async (): Promise<Record<Categoria, Produto[]>> => 
 
     // Inicializando categorias
     const produtosPorCategoria: Record<Categoria, Produto[]> = {
-        masculino: [],
-        promocao: [],
-        feminino: [],
-        infantil: [],
-        novaColecao: [],
+        masculino:          [],
+        limitado:           [],
+        feminino:           [],
+        infantil:           [],
+        acessoriosFemininos: [],
+        acessoriosMasculinos:[]
     };
 
     // Organizando produtos por categoria
