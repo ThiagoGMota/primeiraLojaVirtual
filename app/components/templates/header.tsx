@@ -1,5 +1,6 @@
 'use client'
 import { playfair_display } from "@/app/fonts/fonts";
+import { User } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -16,6 +17,9 @@ export const Header = () => {
         priority
       />
       <div className="absolute inset-0 bg-black opacity-70"></div>
+      <Link href={'/user'} className="text-white font-bold text-4xl absolute z-20 top-20 right-12 bg-black p-4 rounded-full cursor-pointer">
+        <User/>
+      </Link>
       <div className="absolute inset-0 flex justify-center items-center">
         <div className="text-white z-10">
           <h1 className={`text-6xl font-bold my-28 ${playfair_display.className}`}>

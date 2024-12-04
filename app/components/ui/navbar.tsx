@@ -9,10 +9,10 @@ export const NavBar = () => {
         </div>
        <div className='flex justify-between w-9/12'>
        <Link href={'/'}>Home</Link>
-        <Link href={'/novidades'}>Novidades</Link>
-        <Link href={'/masculino'}>Masculino</Link>
-        <Link href={'/feminimo'}>Feminino</Link>
-        <Link href={'/infantil'}>Infantil</Link>
+        <Link href={'/news'}>Novidades</Link>
+        <Link href={'/man'}>Masculino</Link>
+        <Link href={'/woman'}>Feminino</Link>
+        <Link href={'/kids'}>Infantil</Link>
        </div>
       
     </div>

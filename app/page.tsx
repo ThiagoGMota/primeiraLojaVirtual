@@ -8,6 +8,7 @@ import { ProdutoContext } from "./providers/ProdutoProvider";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { Footer } from "./components/templates/footer";
 
 
 export default function Home() {
@@ -37,7 +38,7 @@ export default function Home() {
 
   return (
     <main >
-      <header>
+      <header id="home">
         <Header/>
       </header>
       <section className="px-12 ">
@@ -66,6 +67,7 @@ export default function Home() {
         </Card>
       ))}
       <ShoppingCart/>   
+      <Footer/>
     </main>
   );
 }
