@@ -56,7 +56,7 @@ export const ShoppingCart = () => {
                 </div>
               </div>
               <Link 
-                href="/pagamento" 
+                href="/carrinho" 
                 className="bg-black text-white text-xl py-2 w-full rounded-lg text-center block hover:bg-gray-800 transition-colors"
               >
                 Finalizar Compra

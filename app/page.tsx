@@ -35,7 +35,7 @@ export default function Home() {
       <header id="home">
         <Header/>
       </header>
-      <section className="px-12 ">
+      <section className="px-12 " id="limitado">
         <BrandCarousel/>
         <Promocao/>
       </section>

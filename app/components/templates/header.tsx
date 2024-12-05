@@ -28,7 +28,7 @@ export const Header = () => {
           <div className="flex justify-between items-center flex-col gap-y-8">
             <p className="text-4xl text-center text-zinc-300">Nova Coleção</p>
             <Link 
-                href={'/novidades'} 
+                href='#limitado' 
                 className="bg-black py-6 px-12 rounded-xl hover:bg-white 
                 hover:text-black ease-linear transition-colors border-2 border-black"
             >

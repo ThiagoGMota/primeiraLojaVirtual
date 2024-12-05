@@ -4,11 +4,9 @@ import React, { useContext } from 'react'
 import { Cronometro } from '../ui/cronometro'
 import Image from 'next/image'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
-import { ProdutoContext } from '@/app/context/ProdutoProvider'
 
 export const Promocao = () => {
-   /*  const contextProduto =  useContext(ProdutoContext)
-    const {  } = contextProduto */
+
   return (
     <div className='flex pb-8'>
         <div className='w-5/12  '>

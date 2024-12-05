@@ -19,10 +19,10 @@ interface CartItemProps {
 }
 
 export default function CartItem({ src, alt, title, removerDoCarrinho, id, quantidade }: CartItemProps) {
-  const [quantity, setQuantity] = useState(1)
+  const [quantity, setQuantity] = useState(quantidade)
 
   const addItem = () => setQuantity(prev => prev + 1)
-  const removeItem = () => setQuantity(prev => Math.max(0, prev - 1))
+  const removeItem = () => setQuantity(prev => Math.max(1, prev - 1))
 
   return (
     <Card className='flex flex-row items-center p-2 w-full'>
@@ -35,7 +35,7 @@ export default function CartItem({ src, alt, title, removerDoCarrinho, id, quant
           <Button variant="outline" size="icon" onClick={removeItem}>
             <Minus className="h-4 w-4" />
           </Button>
-          <span className="w-8 text-center">{quantidade}</span>
+          <span className="w-8 text-center">{quantity}</span>
           <Button variant="outline" size="icon" onClick={addItem}>
             <Plus className="h-4 w-4" />
           </Button>
