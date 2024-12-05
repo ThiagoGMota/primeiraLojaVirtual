@@ -57,4 +57,10 @@ npm run api
 Abra [http://localhost:3000](http://localhost:3000) com o seu navegador para ver o resultado
 
 A pagina principal da aplicação é `app/page.tsx`. 
+!['imagem'](./public/image1.png)
+!['imagem'](./public/image2.png)
+!['imagem'](./public/image3.png)
+!['imagem'](./public/image4.png)
+
+
 
