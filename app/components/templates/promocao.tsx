@@ -4,7 +4,7 @@ import React, { useContext } from 'react'
 import { Cronometro } from '../ui/cronometro'
 import Image from 'next/image'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
-import { ProdutoContext } from '@/app/providers/ProdutoProvider'
+import { ProdutoContext } from '@/app/context/ProdutoProvider'
 
 export const Promocao = () => {
    /*  const contextProduto =  useContext(ProdutoContext)
@@ -35,19 +35,19 @@ export const Promocao = () => {
                     <CarouselItem className='flex  gap-x-7 justify-end'>
                         <Image src="/promo1.png" alt='2' width={410} height={500}/>
                         <div>
-                            <Image src="/promo2.png" alt='2' width={400} height={200}/>
+                            <Image src="/promo2.png" alt='2' width={350} height={200}/>
                         </div>
                     </CarouselItem>
                     <CarouselItem className='flex  gap-x-7 justify-end'>
-                        <Image src="/promo1.png" alt='2' width={410} height={500}/>
+                        <Image src="/promo3.png" alt='2' width={410} height={500}/>
                         <div>
-                            <Image src="/promo2.png" alt='2' width={400} height={200}/>
+                            <Image src="/promo4.png" alt='2' width={350} height={200}/>
                         </div>
                     </CarouselItem>
                     <CarouselItem className='flex  gap-x-7 justify-end'>
-                        <Image src="/promo1.png" alt='2' width={410} height={500}/>
+                        <Image src="/promo1.png" alt='2' width={350} height={500}/>
                         <div>
-                            <Image src="/promo2.png" alt='2' width={400} height={200}/>
+                            <Image src="/promo4.png" alt='2' width={350} height={200}/>
                         </div>
                     </CarouselItem>
                 </CarouselContent>

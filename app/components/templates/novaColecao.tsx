@@ -1,7 +1,7 @@
 'use client'
 import react from 'react'
 import { playfair_display } from "@/app/fonts/fonts";
-import { ProdutoContext } from "@/app/providers/ProdutoProvider";
+import { ProdutoContext } from "@/app/context/ProdutoContext";
 import { useContext, useState } from "react";
 import { CategoriaNav } from "../ui/navProducts";
 import { ProdutoGrid } from "./produtoGrid";
@@ -51,7 +51,7 @@ export const NovaColecao = () => {
   return (
     <div className="py-8">
       {/* Cabeçalho */}
-      <div className="flex flex-col border-2 border-black items-center justify-center gap-8 mb-8">
+      <div className="flex flex-col items-center justify-center gap-8 mb-8">
         <h1 className={`text-4xl font-bold ${playfair_display.className}`}>
           Nova Coleção
         </h1>

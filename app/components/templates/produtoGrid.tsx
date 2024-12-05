@@ -8,10 +8,11 @@ interface ProdutoGridProps {
 
 export const ProdutoGrid: React.FC<ProdutoGridProps> = ({ produtos }) => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 justify-items-center max-w-7xl mx-auto px-4">
       {produtos.map((produto) => (
         <ProdutoCard key={produto.id} produto={produto} />
       ))}
     </div>
   );
 };
+

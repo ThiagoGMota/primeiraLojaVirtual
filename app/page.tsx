@@ -3,8 +3,8 @@ import React, { useContext } from "react";
 import { Header } from "./components/templates/header";
 import { Promocao } from "./components/templates/promocao";
 import { BrandCarousel } from "./components/ui/carroselMarcas";
-import { ShoppingCart } from "./components/ui/cartBtn";
-import { ProdutoContext } from "./providers/ProdutoProvider";
+import { ShoppingCart } from "./components/ui/carrinho";
+import { ProdutoContext } from "./context/ProdutoContext";
 import { Footer } from "./components/templates/footer";
 import { NovaColecao } from "./components/templates/novaColecao";
 

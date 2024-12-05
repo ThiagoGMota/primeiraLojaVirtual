@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { NavBar } from "./components/ui/navbar";
-import { ProdutoProvider } from "./providers/ProdutoProvider";
+import { ProdutoProvider } from "./context/ProdutoContext";
+import { CarrinhoProvider } from "./context/carrinhoContext";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -34,7 +35,9 @@ export default function RootLayout({
           <NavBar />
         </nav>
         <ProdutoProvider>
-          <main>{children}</main>
+          <CarrinhoProvider>
+            <main>{children}</main>
+          </CarrinhoProvider>
         </ProdutoProvider>
       </body>
     </html>
